@@ -1,0 +1,16 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: white;
+    color:black;
+    text-align: center;
+}
+.tableContent{
+    border: 1px solid black;
+}
+.Headingh3{
+    margin-left: 200px;
+}
+.division{
+    margin-left: 400px;
+}

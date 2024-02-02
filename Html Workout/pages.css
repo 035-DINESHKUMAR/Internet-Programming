@@ -1,0 +1,15 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+.heading{
+    text-align: center;
+}
+.languageContent{
+    border: 1px solid black;
+}
+.link{
+    text-align: center;
+}

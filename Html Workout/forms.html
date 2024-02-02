@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Creating Forms">
+        <title>Forms</title>
+        <link rel="icon" href="Images/formsIcon.jpg" type="x-images/icon">
+        <link rel="stylesheet" href="formsStyles.css" type="text/css"> 
+    </head>
+    <body>
+        <main>
+            <h1>ABC Academy&#128640;</h1>
+            <h4>Training |Tech News|Freshers Guide</h4>
+            <p>Empowering the young developers to level up their skills through training in software development technologies&#128102;&#128187;</p>
+        </main><hr>
+        <body>
+            <div class="division">
+                <table class="tableContent">
+                    <form>
+                        <thead aria-colspan="2">
+                            <th><h3 class="Headingh3">Registration Form</h3></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><label for="userName">Name : </label></td>
+                                <td colspan="2"><input id="userName"type="text" name="userName" required placeholder="Dinesh" id="name"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="userAge">Age : </label></td>
+                                <td colspan="2"><input type="number"id="userAge" min="10" max="60" step="1" placeholder="18" required/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="userGender">Gender : </label></td>
+                                <td colspan="2"><input type="radio" id="userGender" name="userGender" value="Male"/>Male<input type="radio" name="userGender" id="userGender" value="Female"/>Female</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="userDepartment">Select a Course : </label></td>
+                                <td colspan="2">
+                                    <select name="Department">
+                                        <option value="CSE">CSE</option>
+                                        <option value="ECE">ECE</option>
+                                        <option value="IT">IT</option>
+                                        <option value="EEE">EEE</option>
+                                        <option value="MECH">MECH</option>
+                                        <option value="CIVIL">CIVIL</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label for="userResume">Upload your Resume : </label></td>
+                                <td colspan="2"><input type="file" id="userResume" accept=".png,.jpg,.jpeg,.pdf" name="userResume" multiple/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="reset">Reset</button></td>
+                                <td colspan="2"><button name="submit">Submit</button></td>
+                            </tr>
+                        </tbody>
+                    </form>
+                </table>
+            </div>
+        </body><hr>
+        <footer>
+            <a href="main.html">Home |</a>
+            <a href="https://www.instagram.com/ig_thu_nder/?next=%2F&hl=en" target="_top">Instagram |</a>
+            <a href="https://www.youtube.com/@maduraipubgyt1844" target="_top">Youtube</a>
+        </footer>
+    </body>
+</html>

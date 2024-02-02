@@ -1,0 +1,10 @@
+html{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgba(255, 255, 0, 0.556);
+    color: white;
+}
+.fillForm{
+    background-image: url(Images/BackgroundFormIcon.jpg);
+    background-repeat: no-repeat;
+}
