@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Hotel Room Booking" content="Manageming the Hotel"/>
+        <title>Heritage</title>
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <link rel="script" href="registerForm.js" type="text/javascript">
+        <style>
+            .title-style{
+                background-image: url(Images/hotelroomImage.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 0%;
+                width: 100%;
+                height: 100px;
+                border-radius: 0px 0px 25px 25px;
+            }
+            #link-section{
+                position: absolute;
+                display: inline;
+                top: 32%;
+                right: 150px;
+            }
+            .link-style{
+                color: black;
+                border: 1px solid black;
+                border-radius: 10px;
+                transition: transform 0.5s ease;
+            }
+            .link-style:hover{
+                transform: translatey(-30px);
+                color: orange;
+                border-color: orange;
+            }       
+            .flex-accomodation ul{
+                position: absolute;
+                top: 120px;
+                left: 50px;
+                font-size: 30px;
+            }   
+            .flex-rooms ul{
+                position: absolute;
+                top: 120px;
+                left: 90px;
+                font-size: 30px;
+            }
+            .flex-wifi ul{
+                position: absolute;
+                top: 120px;
+                left: 50px;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title-style">
+            <h1 style="color: green;position: relative;text-align: center;padding-bottom: 4px;text-shadow: 2px 2px 2px black;">Heritage</h1>
+            <ul id="link-section">
+                <a href="formlogin.html" class="link-style" target="top">Login</a> |
+                <a href="formsignup.html" class="link-style" target="top">Signup</a> |
+                <a href="#button-image" class="link-style">Booking</a>
+            </ul>
+        </div>
+        <main>
+            <div class="flex-style">
+                <div class="flex-accomodation">
+                    <h1 style="font-size: 40px;padding: 8px;margin-left: 35px;">Bedding Options</h1>
+                    <ul>
+                        <li>King-sized bed</li><br/>
+                        <li>Queen-sized bed</li><br/>
+                        <li>Twin beds</li>
+                    </ul>
+                </div>
+                <div class="flex-rooms">
+                    <h1 style="padding: 8px;margin-left: 130px;font-size: 40px;">Rooms</h1>
+                    <ul>
+                        <li>Single rooms</li><br/>
+                        <li>Double rooms</li><br/>
+                        <li>Suite</li>
+                    </ul>
+                </div>
+                <div class="flex-wifi">
+                    <h1 style="padding: 8px;margin-left: 110px;font-size: 40px;">Techology</h1>
+                    <ul>
+                        <li>Wi-Fi</li><br/>
+                        <li>satellite TV channels</li><br/>
+                        <li>Charging stations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="registration">
+                <div class="registration-form">
+                    <form id="form-js">
+                        <input type="text" id="Name" placeholder="Name"/><br/><br/>
+                        <input type="number" id="roomNo"  min="1" max="5" placeholder="NoofRooms"/><br/><br/>
+                        <input type="text" id="phoneNumber" placeholder="phoneNumber"><br><br>
+                        <input type="number" min="15" max="40" id="age" placeholder="age"><br/><br/>
+                        <input type="text" id="roomType"  placeholder="Single-Room"/><br/><br/>
+                        <button value="submit" style="border: 1px solid black;border-radius: 10px;width: 150px;font-size: 30px;">Submit</button>
+                    </form>
+                </div>
+                <button onclick="toggleForm()"><img src="Images/hotelroomImage.jpg" alt="hotelroom" id="button-image"></button>
+                <script>
+                    function toggleForm(){
+                        console.log('hello');
+                        var divisionForm = document.getElementById('form-js');
+                        if(divisionForm.style.visibility == 'hidden'){
+                         divisionForm.style.visibility = 'visible';
+                        }
+                        else{
+                        divisionForm.style.visibility = 'hidden';
+                        }
+                    }
+                </script>
+            </div>  
+        </main>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-image: url(Images/backImage1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-section{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    top: 100px;
+    left: 500px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+#userName,#passWord,#Name,#phoneNumber,#age{
+    width: 175px;
+    height: 25px;
+    font-size: 20px;
+}

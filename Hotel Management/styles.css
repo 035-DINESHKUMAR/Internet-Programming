@@ -1,0 +1,103 @@
+body{
+    position: relative;
+    margin: 0;
+    font-size: 23px;
+    background-color: wheat;
+}
+.flex-style{
+    position: relative;
+    height: 600px;
+    width: 100%;
+    top: 101px;
+}
+.flex-accomodation{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
+    background-image: url(Images/accomodationImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 125px;
+    left: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease-out;
+}
+.flex-accomodation:hover{
+    transform: translateY(-10px);
+}
+
+.flex-rooms{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
+    background-image: url(Images/roomsImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 125px;
+    left: 525px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease-out;
+}
+.flex-rooms:hover{
+    transform: translateY(-10px);
+}
+.flex-wifi{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    width: 400px;
+    background-image: url(Images/technologyImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 100px;
+    bottom: 75px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: transform 0.5s ease-out;
+}
+.flex-wifi:hover{
+    transform: translateY(-10px);
+}
+.registration{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+.registration-form{
+    position: absolute;
+    top: 110px;
+    right: 20px;
+    height: 500px;
+    width: 500px;
+    border: 1px;
+    border-radius: 25px;
+}
+#form-js{
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: 50px;
+    visibility: hidden;
+}
+#Name,#roomNo,#phoneNumber,#age,#roomType{
+    width: 175px;
+    height: 30px;
+    font-size: 20px;
+}
+#button-image{
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    height: 500px;
+    width: 500px;
+    border: 1px;
+    border-radius: 25px;
+    cursor: crosshair;
+}

@@ -1,0 +1,19 @@
+.form-section{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: 200px;
+    left: 500px;
+    border: 1px solid;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+body{
+    background-image: url(Images/backImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#userName,#passWord{
+    width: 250px;
+    font-size: 30px;
+}
