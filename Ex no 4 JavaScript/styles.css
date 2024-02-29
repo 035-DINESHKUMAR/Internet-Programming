@@ -1,0 +1,15 @@
+#output-Section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 550px;
+    border: 1px solid black;
+    border-radius: 15px;
+    top: 50px;
+    left: 450px;
+}
+#userInput{
+    width: 25px;
+    height: 25px;
+}

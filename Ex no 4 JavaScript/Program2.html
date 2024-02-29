@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="javaScript" content="Programs for JavaScript"/>
+            <title>Programs on Javascript</title>
+            <link rel="JavaScript" href="Program1.js" type="text/javaScript">
+            <link rel="stylesheet" href="styles.css" type="text/css">
+        </head>
+        <script>
+            function vowelCount()
+            {
+                var word = prompt('Enter the String : ');
+                var count = 0;
+                for(var i=0;i<word.length;i++)
+                {
+                    var j = word.charAt(i);
+                    if(j =='a' || j =='e' || j =='i' || j =='o' || j =='u' || j =='A' || j =='E' || j =='I' || j =='O' || j =='U')
+                        count++;
+                }
+                document.write('Count of Vowels : ',count);
+            }
+            vowelCount();
+        </script>
+    </html>

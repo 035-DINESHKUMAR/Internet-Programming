@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="javaScript" content="Programs for JavaScript"/>
+            <title>Programs on Javascript</title>
+            <link rel="JavaScript" href="Program1.js" type="text/javaScript">
+            <link rel="stylesheet" href="styles.css" type="text/css">
+        </head>
+        <script>
+            var user1 = {
+                name : '',
+                password : ''
+            };
+            var user2 = {
+                name : '',
+                password : ''
+            };
+            user1.name += prompt('Enter the name of user1 : ');
+            user1.password += prompt('Enter the password of user1 : ');
+            user2.name += prompt('Enter the name of user2 : ');
+            user2.password += prompt('Enter the password of user2 : ');
+            function checker(user1,user2)
+            {
+                let key1 = Object.keys(user1);
+                let key2 = Object.keys(user2);
+                if(key1.length !== key2.length)
+                    return 'This objects doesn\'t have equal number of keys';
+                for(let keys of key1){
+                    if(user1[keys] !== user2[keys])
+                        return 'This objects doesn\'t have same properties';
+                }
+                return 'This Objects are same';  
+            }
+            alert(checker(user1,user2));
+        </script>
+    </html>

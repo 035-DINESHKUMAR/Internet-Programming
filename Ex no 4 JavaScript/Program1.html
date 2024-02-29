@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="javaScript" content="Programs for JavaScript"/>
+            <title>Programs on Javascript</title>
+            <link rel="JavaScript" href="Program1.js" type="text/javaScript">
+            <link rel="stylesheet" href="styles.css" type="text/css">
+        </head>
+        <script>
+            function currentDate()
+            {
+                var currentDate = new Date();
+                var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','OCt','Nov','Dec'];
+                var month = months[currentDate.getMonth()];
+                var date = month + '-' + currentDate.getDate() + '-' + currentDate.getFullYear();
+                document.getElementById('output').innerHTML = date;
+            }
+            currentDate();
+        </script>
+        <body>
+            <main>
+                <div id="output-Section">
+                    <button onclick="currentDate();" style="margin-top: 20px;margin-left: 75px;border-radius: 10px;width: 25%;">Show Date</button><br/>
+                    <h2 style="color: red;text-align: center;" id="output"></h2>
+                </div>
+            </main>
+        </body>
+    </html>
