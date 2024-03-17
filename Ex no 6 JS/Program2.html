@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Program2" content="JQuery Programs"/>
+        <title>Program 2 - JQuery</title>
+        <link rel="stylesheet" href="ProgramStyles.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="Program1-Head-Section">
+                Enter Text : <input type="text" id="input" name="input" required/><br/><br/>
+                <button value="submit">Check</button><br/><br/>
+                <label id="label"></label>
+            </div>
+        </main>
+        <script>
+            function countVowels(){
+                var s = document.getElementById('input').value;
+                var l = document.getElementById('label');
+                var count = 0;
+                for(var i = 0;i < s.length;i++){
+                    if(s[i] == 'a' || s[i] == 'A' || s[i] == 'e' || s[i] == 'E' || s[i] == 'i' || s[i] == 'I' || s[i] == 'o' || s[i] == 'O' || s[i] == 'u' || s[i] == 'U')
+                        count++;
+                }
+                l.style.visibility = 'visible';
+                if(count > 1){
+                    l.innerHTML = 'The count of the vowels are : '+ count;
+                }
+                else{
+                    l.innerHTML = 'The count of the vowel is : '+ count;
+                }
+            }
+            $(document).ready(function() {
+                $('button').click(function() {
+                    countVowels();
+                });
+            });
+        </script>
+    </body>
+</html>

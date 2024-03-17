@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="Program1" content="JQuery Programs"/>
+        <title>Program 1 - JQuery</title>
+        <link rel="stylesheet" href="ProgramStyles.css" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+            <div class="Program1-Head-Section">
+                <h1 id="h1">Hello, there!</h1><br/><br/>
+                <button value="submit">Click</button>
+            </div>
+        </main>
+    </body>
+    <script>
+        function clickChangeInnerText(){
+            document.getElementById('h1').innerHTML = "Hello, World!";
+        }
+        function doubleClickChangeInnerText(){
+            document.getElementById('h1').innerHTML = "Hello, there!";
+        }
+        $(document).ready(function() {
+            $('button').click(function() {
+                clickChangeInnerText();
+                $('#h1').css("color", "green");
+            });
+            $('button').dblclick(function() {
+                doubleClickChangeInnerText();
+                $('#h1').css("color", "red");
+            });
+        });
+    </script>
+</html>

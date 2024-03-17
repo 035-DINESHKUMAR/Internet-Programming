@@ -1,0 +1,32 @@
+body{
+    font-size: 30px;
+}
+.Program1-Head-Section{
+    position: relative;
+    top: 50px;
+    height: 900px;
+    width: 100%;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    color: red;
+    font-size: 90px;
+}
+button{
+    border-radius: 10px;
+    color: white;
+    background-color: blue;
+    font-size: 30px;
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+}
+input{
+    width: fit-content;
+    font-size: 30px;
+}
+#label{
+    visibility: hidden;
+}
